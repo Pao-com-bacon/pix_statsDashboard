@@ -1,0 +1,78 @@
+[theme]
+base = "light"
+
+# interface colors
+primaryColor = "#2E6D61"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F2F7F6"
+textColor = "#002B22"
+
+# pallet and borders
+greenColor = "#014B40"
+greenTextColor = "#014B40"
+borderColor = "#D3E3DF"
+dataframeBorderColor = "#D3E3DF"
+dataframeHeaderTextColor = "#002B22"
+
+# official typograph of the Brazil Central Bank
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap, sans-serif"
+headingFont = "Montserrat:https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap, sans-serif"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap, monospace"
+
+baseFontSize = 14
+baseFontWeight = 400
+metricValueFontSize = "32px"
+metricValueFontWeight = 700
+headingFontSizes = ["1.5rem", "1rem", "0.8125rem"]
+headingFontWeights = [600, 600, 600]
+codeFontSize = "0.8125rem"
+codeFontWeight = 400
+
+# borders and finish
+baseRadius = "0.5rem"
+buttonRadius = "0.5rem"
+showWidgetBorder = true
+showSidebarBorder = true
+
+# graphic pallet 
+chartCategoricalColors = [
+    "#014B40",
+    "#77B6A8",
+    "#2E6D61",
+    "#539183",
+    "#002B22",
+]
+
+chartSequentialColors = [
+    "#E4F1EE",
+    "#C9E3DD",
+    "#ADD4CC",
+    "#92C5BA",
+    "#77B6A8",
+    "#65A496",
+    "#539183",
+    "#2E6D61",
+    "#014B40",
+    "#002B22",
+]
+
+[theme.sidebar]
+primaryColor = "#2E6D61"
+backgroundColor = "#F2F7F6"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#002B22"
+
+greenColor = "#014B40"
+greenTextColor = "#014B40"
+borderColor = "#C9E3DD"
+showWidgetBorder = true
+
+# fonts hierarchy 
+headingFontSizes = ["1.25rem", "1rem", "0.8125rem"]
+headingFontWeights = [600, 600, 600]
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap, monospace"
+codeFontSize = "0.8125rem"
+codeFontWeight = 400
+
+baseRadius = "0.5rem"
+buttonRadius = "0.5rem"

@@ -1,4 +1,5 @@
 import streamlit as st
+import plotly.express as px
 from pathlib import Path
 import duckdb as db
 
@@ -37,9 +38,61 @@ df_economic = load_view(pix_con, "vw_pix_economic")
 df_fraud = load_view(pix_con, "vw_pix_fraud")
 
 
-st.dataframe(df_cad) # used to check if the pipeline is running okay. And it is
-st.dataframe(df_economic)
-st.dataframe(df_fraud)
+#st.dataframe(df_cad) --used to check if the pipeline is running okay. And it is
+#st.dataframe(df_economic)
+#st.dataframe(df_fraud)
+
+#================================================================================================================================
+# INITIAL SETTINGS OF THE APP AND PAGES DESIGN
+#================================================================================================================================
+
+pages_map = {
+    0: "Registration Information",
+    1: "Economic Information",
+    2: "Frauds Information",
+    3: "About Pix System",
+}
+
+pages = st.segmented_control("Dashboard Pages",
+                             options = pages_map.keys(),
+                             format_func = lambda page: pages_map[page],
+                             selection_mode='single',
+                             default=0)
+
+#================================================================================================================================
+# REGISTRATION INFORMATION PAGE
+#================================================================================================================================
+
+if pages == 0:
+    #instrction about Registration
+    pass
+
+#================================================================================================================================
+# ECONOMIC DATA PAGE
+#================================================================================================================================
+
+elif pages == 1:
+    #instruction about economic
+    pass
+
+#================================================================================================================================
+# FRAUDS INFORMATION PAGE
+#================================================================================================================================
+
+elif pages == 2:
+    #instruction about frauds
+    pass
+
+#================================================================================================================================
+# ABOUT PIX PAGE
+#================================================================================================================================
+
+elif pages == 3:
+    #instruction about pix
+    pass
+
+else:
+    st.info("You must select one of the pages above to visualize the data avaliable")
 
 
 
