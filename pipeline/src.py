@@ -42,5 +42,4 @@ def req_get (url, type, con_db):
         return None
 
     return None
-
   
